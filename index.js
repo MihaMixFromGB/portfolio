@@ -2,7 +2,7 @@
 // import chatAppImage from './assets/jpeg/project-chat-app.jpeg';
 // import shopImage from './assets/jpeg/project-shop.jpeg';
 // import myPhoto from './assets/png/my-photo.png';
-// import commonBg from './assets/svg/common-bg.svg';
+import commonBg from './assets/svg/common-bg.svg';
 import hamMenu from './assets/svg/ham-menu.svg';
 import hamMenoClose from './assets/svg/ham-menu-close.svg';
 

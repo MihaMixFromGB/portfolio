@@ -17,6 +17,7 @@ module.exports = {
     },
     module: {
         rules: [
+            // import svg in index.js
             {
                 test: /\.html$/i,
                 use: 'html-loader'

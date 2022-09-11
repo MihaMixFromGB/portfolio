@@ -3,11 +3,8 @@
 // import shopImage from './assets/jpeg/project-shop.jpeg';
 // import myPhoto from './assets/png/my-photo.png';
 // import commonBg from './assets/svg/common-bg.svg';
-// import hamMenu from './assets/svg/ham-menu.svg';
-// import hamMenoClose from './assets/svg/ham-menu-close.svg';
-
-// // load styles
-// import style from './css/style.css';
+import hamMenu from './assets/svg/ham-menu.svg';
+import hamMenoClose from './assets/svg/ham-menu-close.svg';
 
 // ---
 const hamMenuBtn = document.querySelector('.header__main-ham-menu-cont')

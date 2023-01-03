@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="icon" type="image/png" href="./assets/png/my-photo.png"/>
+    <link rel="icon" type="image/png" href="./assets/png/my-photo.png" />
     <title>Anton Dehterev</title>
-    <meta name="description" content="Frontend Developer's Portfolio from Anton Dehterev" />
+    <meta
+      name="description"
+      content="Frontend Developer's Portfolio from Anton Dehterev"
+    />
 
     <link rel="stylesheet" href="css/style.css" />
 
@@ -95,8 +98,9 @@
         <h1 class="heading-primary">HEY, I'M ANTON DEHTEREV</h1>
         <div class="home-hero__info">
           <p class="text-primary">
-            I wanna be a member of a professional and friendly web development team, 
-            that&nbsp;I&nbsp;could continuously develop my professional skills to archieve high team's results.
+            I wanna be a member of a professional and friendly web development
+            team, that&nbsp;I&nbsp;could continuously develop my professional
+            skills to archieve high team's results.
           </p>
         </div>
         <div class="home-hero__cta">
@@ -112,7 +116,8 @@
         <h2 class="heading heading-sec heading-sec__mb-med">
           <span class="heading-sec__main">About</span>
           <span class="heading-sec__sub">
-            Here you'll find more information about me, what I do,<br>and my current skills mostly in terms of web developer
+            Here you'll find more information about me, what I do,<br />and my
+            current skills mostly in terms of web developer
           </span>
         </h2>
         <div class="about__content">
@@ -120,23 +125,27 @@
             <h3 class="about__content-title">Get to know me!</h3>
             <div class="about__content-details">
               <p class="about__content-details-para">
-                I'm <strong>a Junior Web Developer</strong> 
-                from Novosibirsk. I wanna be a member of a&nbsp;professional and friendly web development team, 
-                that&nbsp;I&nbsp;could continuously develop my professional skills to archieve high team's results.
+                I'm <strong>a Junior Web Developer</strong>
+                from Novosibirsk. I wanna be a member of a&nbsp;professional and
+                friendly web development team, that&nbsp;I&nbsp;could
+                continuously develop my professional skills to archieve high
+                team's results.
               </p>
               <p class="about__content-details-para">
-                I'm currently completing the Fullstack Javascript course at GeekBrains 
-                (the duration of course is 16 months) and open to new job opportunities.
-                My web development projects are presented in the
-                <a href="./index.html#projects"><strong>Projects</strong></a> section.
+                I'm currently completing the Fullstack Javascript course at
+                GeekBrains (the duration of course is 16 months) and open to new
+                job opportunities. My web development projects are presented in
+                the
+                <a href="./index.html#projects"><strong>Projects</strong></a>
+                section.
               </p>
               <p class="about__content-details-para">
-                One of my current job duties is workflow automation.
-                I program in C#, more information on my CV 
-                (<a 
+                One of my current job duties is workflow automation. I program
+                in C#, more information on my CV (<a
                   href="https://novosibirsk.hh.ru/resume/3ae8fb1dff0b0ffefb0039ed1f57716c6b6745"
                   target="_blank"
-                >hh.ru</a>).
+                  >hh.ru</a
+                >).
               </p>
             </div>
             <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr"
@@ -144,11 +153,12 @@
             >
           </div>
           <div class="about__content-skills">
-            <h3 class="about__content-title">My  Skills</h3>
+            <h3 class="about__content-title">My Skills</h3>
             <div class="skills">
               <div class="skills__skill">HTML</div>
               <div class="skills__skill">CSS</div>
               <div class="skills__skill">SASS/SCSS</div>
+              <div class="skills__skill">Tailwind</div>
               <div class="skills__skill">JavaScript</div>
               <div class="skills__skill">TypeScript</div>
               <div class="skills__skill">Vue</div>
@@ -160,9 +170,12 @@
               <div class="skills__skill">MSSQL</div>
               <div class="skills__skill">Firebase</div>
               <div class="skills__skill">Node.js</div>
+              <div class="skills__skill">Nest</div>
               <div class="skills__skill">Express</div>
               <div class="skills__skill">Socket.io</div>
               <div class="skills__skill">Pug</div>
+              <div class="skills__skill">Swagger</div>
+              <div class="skills__skill">Nx (build system)</div>
               <div class="skills__skill">C#</div>
               <div class="skills__skill">VBA</div>
               <div class="skills__skill">Figma</div>
@@ -179,12 +192,44 @@
         <h2 class="heading heading-sec heading-sec__mb-bg">
           <span class="heading-sec__main">Projects</span>
           <span class="heading-sec__sub">
-            Here you'll find the personal web development projects that I've created for myself 
-            during&nbsp;my&nbsp;study at GeekBrains and self-study.
+            Here you'll find the personal web development projects that I've
+            created for myself during&nbsp;my&nbsp;study at GeekBrains and
+            self-study.
           </span>
         </h2>
 
         <div class="projects__content">
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/jpeg/project-news-blog.jpeg"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">News Blog</h3>
+              <p class="projects__row-content-desc">
+                News Blog is my first Fullstack project that I've build with Nx
+                is a smart, extensinble build system with monorepo support. In
+                this project I tried to study and create Rest API, CORS
+                settings, JWT authorization and realtime notifications based on
+                websocket (socket.io). There are a few simple features on a
+                Frontend-side. These are a login form, a page with a list of
+                news and a page with news details where you can also post a
+                comment. If other user's created, edited or removed a comment
+                you'll be notificated immediately with a pop-up notification
+                that will appears on the bottom right corner of the screen.
+              </p>
+              <a
+                href="./project-3.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Case Study</a
+              >
+            </div>
+          </div>
           <div class="projects__row">
             <div class="projects__row-img-cont">
               <img
@@ -197,8 +242,9 @@
             <div class="projects__row-content">
               <h3 class="projects__row-content-title">Chat for Everyone</h3>
               <p class="projects__row-content-desc">
-                Chat for Everyone is the app that Everyone can create a chat or many chats, 
-                invite friends, coworkers or business partners for text messaging.
+                Chat for Everyone is the app that Everyone can create a chat or
+                many chats, invite friends, coworkers or business partners for
+                text messaging.
               </p>
               <a
                 href="./project-1.html"
@@ -220,9 +266,10 @@
             <div class="projects__row-content">
               <h3 class="projects__row-content-title">Clothing Shop</h3>
               <p class="projects__row-content-desc">
-                The online clothing store is created using the website template from Figma.
-                An adaptive layout for four pages is made. There are main, catalog of man's clothing, 
-                cart, registration page. It's made for desktop, tablet and mobile.
+                The online clothing store is created using the website template
+                from Figma. An adaptive layout for four pages is made. There are
+                main, catalog of man's clothing, cart, registration page. It's
+                made for desktop, tablet and mobile.
               </p>
               <a
                 href="./project-2.html"
@@ -240,7 +287,8 @@
         <h2 class="heading heading-sec heading-sec__mb-med">
           <span class="heading-sec__main heading-sec__main--lt">Contact</span>
           <span class="heading-sec__sub heading-sec__sub--lt">
-           Feel free to contact me by submitting the form below and I'll get back to you as soon as possible
+            Feel free to contact me by submitting the form below and I'll get
+            back to you as soon as possible
           </span>
         </h2>
         <div class="contact__form-container">

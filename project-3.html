@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" type="image/png" href="./assets/png/my-photo.png"/>
+    <title>Chat for Everyone</title>
+    <meta name="description" content="About News Blog" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/png/my-photo.png"
+              alt="Logo Image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Anton Dehterev</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link"> About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">
+                Projects
+              </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#contact" class="header__link"> Contact </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./project-1-ru.html" class="header__link"> RUS </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Projects </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#contact"> Contact </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./project-1-ru.html"> RUS </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="project-cs-hero">
+      <div class="project-cs-hero__content">
+        <h1 class="heading-primary">News Blog</h1>
+        <div class="project-cs-hero__info">
+          <p class="text-primary">
+            This page contains the case study of News Blog:</br>
+            Project Overview, Tools Used, Live Link and Repository Link.
+          </p>
+        </div>
+        <div class="project-cs-hero__cta">
+          <a
+            href="https://gb-news-blog-web.vercel.app/"
+            class="btn btn--bg"
+            target="_blank"
+          >Live Link</a>
+        </div>
+        <div class="project-cs-hero__info">
+          <p class="text-primary">
+            The limitation of Render.com:<br>A response delay of up to 30 seconds for the first request<br>that comes in after a period of inactivity.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="project-details">
+      <div class="main-container">
+        <div class="project-details__content">
+          <div class="project-details__showcase-img-cont">
+            <img
+              src="./assets/jpeg/project-news-blog.jpeg"
+              alt="Project Image"
+              class="project-details__showcase-img"
+            />
+          </div>
+          <div class="project-details__content-main">
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">Project Overview</h3>
+              <p class="project-details__desc-para">
+                News Blog is my first Fullstack project that I've build with Nx
+                is a smart, extensinble build system with monorepo support.
+              </p>
+              <figure>
+                <img
+                  src="./assets/png/news-blog-graph.png"
+                  alt="Project Graph"
+                  class="project-details__showcase-img"
+                />
+                <figcaption class="project-details__desc-para" style="text-align: center">The representation of the source code in my monorepo (The Project Graph)</figcaption>
+              </figure>
+              <h3 class="project-details__content-title">Backend</h3>
+              <p class="project-details__desc-para">
+                The backend project's name is api. It is a RESTful Web Service based on a progressive Node.js framework NestJS
+                that let authorized users to manipulate resources using HTTP GET/POST/PATCH/DELETE methods.
+                For more information about the Rest API, click 
+                <a href="https://gb-news-blog.onrender.com/swagger/" target="_blank">here</a>.
+                I've used swagger.io for creating Rest API description.<br>
+                Some types of resources (entities) have been developed. These are a news, a comment, a user, a category.
+                A PostgreSQL Database has been choosen for storing data. 
+                TypeORM framework has been used for an object-relational mapping of our resources with the Active Record pattern.<br>
+                Passport library (@nestjs/passport module) used for users authentication. At a high level, Passport executes a series of steps to:<br>
+                1) Authenticate a user by verifying their "credentials" (email/password) (local.strategy)<br>
+                2) Manage authenticated state (by issuing a portable token (JWT), set cookie with Max-Age attribute is 60 sec) (jwt.strategy)<br>
+                3) Attach information about the authenticated user to the Request object for further use in route handlers (userId, email, role) (jwt.strategy).<br>
+                The Event Emitter pattern (@nestjs/event-emitter module) used 
+                to notify the Socket Gateway of creating, editing or removing comment in the Service inside the Comments Module.
+                The Socket Gateway implements a logic to broadcast events to a subset of clients (that join to room by newsId).
+              </p>
+              <h3 class="project-details__content-title">Frontend</h3>
+              <p class="project-details__desc-para">
+                The frontend project's name is web. There are a few simple features on the
+                Frontend side. These are a login form, a page with a list of
+                news and a page with news details where you can also post a
+                comment. If other user's created, edited or removed a comment
+                you'll be notificated immediately with a pop-up notification
+                that will appears on the bottom right corner of the screen.
+                The SPA is built with a collection of Javascript libraries: React, React Router, TailwindCSS, Socket.io.<br>
+                Two custom contexts are designed to pass authorization and socket data through the component tree.
+                These custom contexts are wrapped in two hooks 
+                that get access to the context inside every React component by calling the hook.
+                The useAuth hook contains the context with auth data: 
+                user (if not login user is null), loading (true/false for setting prealoder by sending requests),
+                error (an error's message of a response), login (send a login request), 
+                signup (send a signup request), logout (send a logout request).
+                The useSocket hook contains the context with only one socket instance 
+                that let any React component to exchange messages with the backend using socket.io utilities.<br>
+                The Protected Route component is also designed only authorized users get access to the SPA.
+              </p>
+              <h3 class="project-details__content-title">Deployment</h3>
+              <p class="project-details__desc-para">
+                <strong>Frontend</strong> - Vercel.com.
+              </p>
+              <p class="project-details__desc-para">
+                <strong>Backend</strong> - Render.com.<br>
+                The limitation of Render.com: 
+                A response delay of up to 30 seconds for the first request that comes in after a period of inactivity.
+              </p>
+              <p class="project-details__desc-para">
+                <strong>PostgreSQL</strong> - Elephantsql.com.
+              </p>
+            </div>
+            <div class="project-details__tools-used">
+              <h3 class="project-details__content-title">Tools Used</h3>
+              <div class="skills">
+                <div class="skills__skill">HTML</div>
+                <div class="skills__skill">Tailwind</div>
+                <div class="skills__skill">TypeScript</div>
+                <div class="skills__skill">React</div>
+                <div class="skills__skill">React Router Dom</div>
+                <div class="skills__skill">Nest</div>
+                <div class="skills__skill">Rest API</div>
+                <div class="skills__skill">JWT Authorization</div>
+                <div class="skills__skill">CORS</div>
+                <div class="skills__skill">TypeORM</div>
+                <div class="skills__skill">PostgreSQL</div>
+                <div class="skills__skill">Swagger.io</div>
+                <div class="skills__skill">Socket.io</div>
+                <div class="skills__skill">Nx (build system)</div>
+                <div class="skills__skill">Monorepo</div>
+                <div class="skills__skill">Git</div>
+                <div class="skills__skill">Vercel.com</div>
+                <div class="skills__skill">Render.com</div>
+                <div class="skills__skill">Elephantsql.com</div>
+              </div>
+            </div>
+            <div class="project-details__links">
+              <h3 class="project-details__content-title">Details</h3>
+              <a
+                href="https://gb-news-blog-web.vercel.app/"
+                class="btn btn--med btn--theme project-details__links-btn"
+                target="_blank"
+              >Live Link</a>
+              <a
+                href="https://gb-news-blog.onrender.com/swagger/"
+                class="btn btn--med btn--theme project-details__links-btn"
+                target="_blank"
+              >Rest API</a>
+              <a
+                href="https://github.com/MihaMixFromGB/gb-news-blog"
+                class="btn btn--med btn--theme-inv project-details__links-btn"
+                target="_blank"
+                >Repository</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__lower">
+          &copy; Copyright 2022. Thanks
+          <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
+            >Ram Maheshwari</a
+          >
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>

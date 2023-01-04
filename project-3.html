@@ -47,7 +47,7 @@
               <a href="./index.html#contact" class="header__link"> Contact </a>
             </li>
             <li class="header__link-wrapper">
-              <a href="./project-1-ru.html" class="header__link"> RUS </a>
+              <a href="./project-3-ru.html" class="header__link"> RUS </a>
             </li>
           </ul>
           <div class="header__main-ham-menu-cont">
@@ -84,7 +84,7 @@
             </li>
 
             <li class="header__sm-menu-link">
-              <a href="./project-1-ru.html"> RUS </a>
+              <a href="./project-3-ru.html"> RUS </a>
             </li>
           </ul>
         </div>
@@ -147,10 +147,10 @@
                 I've used swagger.io for creating Rest API description.<br>
                 Some types of resources (entities) have been developed. These are a news, a comment, a user, a category.
                 A PostgreSQL Database has been choosen for storing data. 
-                TypeORM framework has been used for an object-relational mapping of our resources with the Active Record pattern.<br>
+                TypeORM library has been used for an object-relational mapping of our resources with the Active Record pattern.<br>
                 Passport library (@nestjs/passport module) used for users authentication. At a high level, Passport executes a series of steps to:<br>
-                1) Authenticate a user by verifying their "credentials" (email/password) (local.strategy)<br>
-                2) Manage authenticated state (by issuing a portable token (JWT), set cookie with Max-Age attribute is 60 sec) (jwt.strategy)<br>
+                1) Authenticate a user by verifying their "credentials" (email/password) (local.strategy).<br>
+                2) Manage authenticated state (by issuing a portable token (JWT), set cookie with Max-Age attribute is 60 sec) (jwt.strategy).<br>
                 3) Attach information about the authenticated user to the Request object for further use in route handlers (userId, email, role) (jwt.strategy).<br>
                 The Event Emitter pattern (@nestjs/event-emitter module) used 
                 to notify the Socket Gateway of creating, editing or removing comment in the Service inside the Comments Module.
@@ -238,7 +238,7 @@
     <footer class="main-footer">
       <div class="main-container">
         <div class="main-footer__lower">
-          &copy; Copyright 2022. Thanks
+          &copy; Copyright 2023. Thanks
           <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
             >Ram Maheshwari</a
           >

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" type="image/png" href="./assets/png/my-photo.png"/>
+    <title>Chat for Everyone</title>
+    <meta name="description" content="Страница о проекте News Blog" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/png/my-photo.png"
+              alt="Logo Image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Антон Дехтерев</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Главная </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link"> Обо мне </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">
+                Проекты
+              </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#contact" class="header__link"> Контакты </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./project-3.html" class="header__link"> ENG </a>
+            </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Главная </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> Обо мне </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Проекты </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#contact"> Контакты </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./project-3.html"> ENG </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="project-cs-hero">
+      <div class="project-cs-hero__content">
+        <h1 class="heading-primary">News Blog</h1>
+        <div class="project-cs-hero__info">
+          <p class="text-primary">
+            На странице приведено описание приложения News Blog:</br>обзор, 
+            инструменты, используемые при разработке приложения, 
+            а также ссылки на интернет-версию и репозиторий проекта.
+          </p>
+        </div>
+        <div class="project-cs-hero__cta">
+          <a
+            href="https://gb-news-blog-web.vercel.app/"
+            class="btn btn--bg"
+            target="_blank"
+          >Интернет-версия</a>
+        </div>
+        <div class="project-cs-hero__info">
+          <p class="text-primary">
+            Ограничение от Render.com:<br>Задержка ответа при первом запросе ресурса после периода неактивности может достигать 30 секунд.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="project-details">
+      <div class="main-container">
+        <div class="project-details__content">
+          <div class="project-details__showcase-img-cont">
+            <img
+              src="./assets/jpeg/project-news-blog.jpeg"
+              alt="Project Image"
+              class="project-details__showcase-img"
+            />
+          </div>
+          <div class="project-details__content-main">
+            <div class="project-details__desc">
+              <h3 class="project-details__content-title">Обзор проекта</h3>
+              <p class="project-details__desc-para">
+                News Blog - это мой первый Fullstack проект, который я создал 
+                с помощью Nx - интеллектуальной и расширяемой системы сборки проектов, 
+                поддерживающей стратегию разработки приложений на основе монорерозиториев.
+              </p>
+              <figure>
+                <img
+                  src="./assets/png/news-blog-graph.png"
+                  alt="Project Graph"
+                  class="project-details__showcase-img"
+                />
+                <figcaption class="project-details__desc-para" style="text-align: center">
+                  Представление связей сборок в моем монорепозитории (Граф проекта)
+                </figcaption>
+              </figure>
+              <h3 class="project-details__content-title">Backend</h3>
+              <p class="project-details__desc-para">
+                Api - backend часть проекта, которая представляет собой Restful веб-сервис, 
+                созданный с использованием прогрессивного Node.js фреймворка NestJS. 
+                Веб-сервис позволяет авторизованным пользователям управлять ресурсами, 
+                используя HTTP методы (GET/POST/PATCH/DELETE). 
+                Для получения дополнительных сведений нажмите 
+                <a href="https://gb-news-blog.onrender.com/swagger/" target="_blank">сюда</a>. 
+                Описание Rest API сделано с использованием библиотеки swagger.io.<br>
+                Были разработаны следующие типы ресурсов (сущностей): новость, комментарий, пользователь, категория. 
+                Для хранения данных была выбрана БД PostgreSQL. 
+                Для сопоставления объектов бизнес-логики и данных (сущностей), 
+                хранимых в БД, использовались паттерн Active Record и библиотека TypeORM.<br>
+                Для аутентификации пользователей использовалась библиотека passport.js (модуль @nestjs/passport). 
+                По существу, стратегия работы passport.js заключается в выполнении следующих этапов:<br>
+                1) Аутентификация пользователя посредством верификации его данных (email / пароль) (local.strategy).<br>
+                2) Управление состоянием пользоваля, прошедшего аутентификацию 
+                (предоставление портативного токена (JWT) посредством установки cookie с атрибутом Max-Age равным 60 секунд) 
+                (jwt.strategy).<br>
+                3) Прикрепление информации (userId, email, role) о пользователе, прошедшем аутентификацию, 
+                к объекту Request для дальнейшего использования в обработчиках маршрута (jwt.strategy).<br>
+                В Socket Gateway реализована логика выполнения широковещательной рассылки части клиентов 
+                с использованием механизма room от socket.io (room определяется по id новости).
+                Внутри Comments Module для уведомления Socket Gateway о создании, редактировании или 
+                удалении комментария (логика реализована в Service) использован паттерн Event Emitter (@nestjs/event-emitter модуль).
+              </p>
+              <h3 class="project-details__content-title">Frontend</h3>
+              <p class="project-details__desc-para">
+                Web - frontend часть проекта. Здесь разработано несколько простых компонентов: 
+                форма для регистрации пользователя, страница с перечнем новостей и 
+                страница с детальной информацией о новости, где Вы также можете оставить свой комментарий. 
+                Если другой пользователь создаст, отредактирует или удалит комментарий, 
+                то Вы практически сразу будете уведомлены, получив всплывающее уведомление в правом нижнем углу экрана.
+                SPA приложение построено с использованием следующего набора Javascript библиотек: 
+                React, React Router, TailwindCSS, Socket.io.<br>
+                Разработаны два пользовательских контекста для передачи данных об авторизации и 
+                socket-сервиса по дереву React компонентов. 
+                Эти пользовательские контексты добавлены в два хука, которые предоставляют доступ к контексту 
+                внутри каждого React компонента посредством вызова соответвующего хука. 
+                Хук useAuth содержит контекст с данными авторизации: 
+                user (если не выполнен вход, то значение null), 
+                loading (true/false для установки прелоадеров при отправке запросов), 
+                error (сообщение об ошибке в объекте Response), 
+                login (отправка запроса на подключение к веб-сервису и входа в приложение), 
+                signup (отправка запроса на регистрацию нового пользователя), 
+                logout (отправка запроса на отключение от веб-сервиса и выхода из приложения). 
+                Хук useSocket содержит контекст только с одним экземпляром socket-сервиса, 
+                который позволит любому React компоненту выполнить обмен сообщениями с backend частью проекта, 
+                используя средства библиотеки socket.io.<br>
+                Также в разработан компонент Protected Route, 
+                который предоставляет доступ к SPA приложению только авторизованным пользователям.
+              </p>
+              <h3 class="project-details__content-title">Размещение проектов</h3>
+              <p class="project-details__desc-para">
+                <strong>Frontend</strong> - Vercel.com.
+              </p>
+              <p class="project-details__desc-para">
+                <strong>Backend</strong> - Render.com.<br>
+                Ограничение от Render.com: Задержка ответа при первом запросе ресурса после периода неактивности может достигать 30 секунд.
+              </p>
+              <p class="project-details__desc-para">
+                <strong>PostgreSQL</strong> - Elephantsql.com.
+              </p>
+            </div>
+            <div class="project-details__tools-used">
+              <h3 class="project-details__content-title">Инструменты</h3>
+              <div class="skills">
+                <div class="skills__skill">HTML</div>
+                <div class="skills__skill">Tailwind</div>
+                <div class="skills__skill">TypeScript</div>
+                <div class="skills__skill">React</div>
+                <div class="skills__skill">React Router Dom</div>
+                <div class="skills__skill">Nest</div>
+                <div class="skills__skill">Rest API</div>
+                <div class="skills__skill">JWT Authorization</div>
+                <div class="skills__skill">CORS</div>
+                <div class="skills__skill">TypeORM</div>
+                <div class="skills__skill">PostgreSQL</div>
+                <div class="skills__skill">Swagger.io</div>
+                <div class="skills__skill">Socket.io</div>
+                <div class="skills__skill">Nx (build system)</div>
+                <div class="skills__skill">Monorepo</div>
+                <div class="skills__skill">Git</div>
+                <div class="skills__skill">Vercel.com</div>
+                <div class="skills__skill">Render.com</div>
+                <div class="skills__skill">Elephantsql.com</div>
+              </div>
+            </div>
+            <div class="project-details__links">
+              <h3 class="project-details__content-title">Ознакомиться подробнее</h3>
+              <a
+                href="https://gb-news-blog-web.vercel.app/"
+                class="btn btn--med btn--theme project-details__links-btn"
+                target="_blank"
+              >Frontend</a>
+              <a
+                href="https://gb-news-blog.onrender.com/swagger/"
+                class="btn btn--med btn--theme project-details__links-btn"
+                target="_blank"
+              >Rest API</a>
+              <a
+                href="https://github.com/MihaMixFromGB/gb-news-blog"
+                class="btn btn--med btn--theme-inv project-details__links-btn"
+                target="_blank"
+                >Репозиторий</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__lower">
+          &copy; Copyright 2023. Thanks
+          <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
+            >Ram Maheshwari</a
+          >
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
